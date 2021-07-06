@@ -1,10 +1,10 @@
 export interface Card {
-    code: string,
-    image: URL,
+    code: string;
+    image: string;
     images: {
-        svg: URL,
-        png: URL
-    },
-    value: string,
-    suite: string,
+        svg: string;
+        png: string;
+    };
+    value: string;
+    suit: string;
 }
