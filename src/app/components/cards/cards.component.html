@@ -1,1 +1,5 @@
-<p>cards works!</p>
+<ul class="cards">
+    <li *ngFor="let card of cards">
+        <img src="{{ card.image}}" alt="{{card.value}}" class="card"/>
+    </li>
+</ul>
