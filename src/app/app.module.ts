@@ -10,6 +10,8 @@ import { ControlsComponent } from './components/controls/controls.component';
 import { StartButtonComponent } from './components/start-button/start-button.component';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
 import { DealerCardsComponent } from './components/dealer-cards/dealer-cards.component';
+import { RouterModule } from '@angular/router';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,16 @@ import { DealerCardsComponent } from './components/dealer-cards/dealer-cards.com
     ControlsComponent,
     StartButtonComponent,
     TopBarComponent,
-    DealerCardsComponent
+    DealerCardsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot([
+      {path: '', component: HomeComponent},
+      {path: 'game', component: TableComponent}
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
