@@ -8,6 +8,7 @@ import { CardsComponent } from './components/cards/cards.component';
 import { TableComponent } from './screens/table/table.component';
 import { ControlsComponent } from './components/controls/controls.component';
 import { StartButtonComponent } from './components/start-button/start-button.component';
+import { TopBarComponent } from './components/top-bar/top-bar.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { StartButtonComponent } from './components/start-button/start-button.com
     CardsComponent,
     TableComponent,
     ControlsComponent,
-    StartButtonComponent
+    StartButtonComponent,
+    TopBarComponent
   ],
   imports: [
     BrowserModule,
