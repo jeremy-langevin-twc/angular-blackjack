@@ -1,6 +1,7 @@
 <div class="container">
     <div class="table" [style.background]="tableColor">
-        <app-cards></app-cards>
+        <app-cards *ngIf="gameStarted"></app-cards>
     </div>
     <app-controls></app-controls>
+    <app-start-button *ngIf="!gameStarted" (btnClick)="toggleStartGame()"></app-start-button>
 </div>

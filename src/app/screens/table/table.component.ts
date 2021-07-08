@@ -8,9 +8,15 @@ import { Component, OnInit, Input } from '@angular/core';
 export class TableComponent implements OnInit {
   @Input() tableColor: string;
 
+  gameStarted: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toggleStartGame() {
+    this.gameStarted = !this.gameStarted;
   }
 
 }
