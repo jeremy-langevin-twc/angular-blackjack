@@ -9,6 +9,7 @@ import { TableComponent } from './screens/table/table.component';
 import { ControlsComponent } from './components/controls/controls.component';
 import { StartButtonComponent } from './components/start-button/start-button.component';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
+import { DealerCardsComponent } from './components/dealer-cards/dealer-cards.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TopBarComponent } from './components/top-bar/top-bar.component';
     TableComponent,
     ControlsComponent,
     StartButtonComponent,
-    TopBarComponent
+    TopBarComponent,
+    DealerCardsComponent
   ],
   imports: [
     BrowserModule,
